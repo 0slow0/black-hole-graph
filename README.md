@@ -4,8 +4,6 @@ Turns your Obsidian graph view into a black hole. Every top-level folder becomes
 
 Pan and zoom the scene, click a folder's orbit to focus on it, and click any star to open its note.
 
-![Gargantua mode](screenshots/gargantua.png)
-
 ## Looks
 
 The plugin ships with eight visual modes you can switch between from the toolbar, each restyling the same underlying data:
