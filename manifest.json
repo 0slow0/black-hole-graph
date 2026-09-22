@@ -1,0 +1,10 @@
+{
+  "id": "black-hole-graph",
+  "name": "Black Hole Graph",
+  "version": "2.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Your vault as a black hole: every folder is an orbit in the accretion disc, every note a star. Eight looks: Gargantua, Quasar, Interstellar, Polarized, Maelstrom, Galaxy, Eclipse and Binary.",
+  "author": "slow",
+  "authorUrl": "https://github.com/0slow0",
+  "isDesktopOnly": false
+}

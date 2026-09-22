@@ -1,0 +1,76 @@
+.black-hole-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #07060c 0%, #020208 65%, #000 100%);
+}
+
+.black-hole-root canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+.black-hole-root canvas.is-dragging { cursor: grabbing; }
+.black-hole-root canvas.is-hovering { cursor: pointer; }
+
+.black-hole-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: calc(100% - 20px);
+  z-index: 2;
+}
+
+.black-hole-toolbar button,
+.black-hole-chip {
+  background: rgba(15, 12, 24, 0.65);
+  border: 1px solid rgba(190, 190, 255, 0.3);
+  color: #dcdcff;
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 11px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  box-shadow: none;
+  height: auto;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+.black-hole-toolbar button:hover,
+.black-hole-chip:hover { background: rgba(70, 60, 130, 0.7); color: #fff; }
+.black-hole-toolbar button.is-on { background: rgba(120, 110, 220, 0.5); border-color: rgba(220, 220, 255, 0.85); color: #fff; }
+.black-hole-toolbar .black-hole-sep { width: 1px; background: rgba(190, 190, 255, 0.25); margin: 2px 2px; }
+
+.black-hole-legend {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: calc(100% - 20px);
+  z-index: 2;
+}
+
+.black-hole-chip { display: inline-flex; align-items: center; gap: 6px; }
+.black-hole-chip.is-active { border-color: #fff; color: #fff; }
+.black-hole-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+.black-hole-stats {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 11px;
+  color: rgba(210, 210, 255, 0.5);
+  z-index: 2;
+  pointer-events: none;
+}
