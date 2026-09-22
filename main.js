@@ -241,6 +241,12 @@ class BlackHoleView extends ItemView {
       this.plugin.saveSettings();
     }, this.plugin.settings.showLinks);
     mk('Overview', () => { this.setFocus(null); this.resetCamera(); });
+    // hidden by default on narrow/mobile screens (a long folder legend otherwise stacks into a full-screen
+    // wall of pills there) — this button is the way back to it when you want it
+    this.legendBtn = mk('Legend', (b) => {
+      this.legend.toggleClass('is-open', !this.legend.hasClass('is-open'));
+      b.toggleClass('is-on', this.legend.hasClass('is-open'));
+    });
 
     this.legend = root.createDiv({ cls: 'black-hole-legend' });
     this.statsEl = root.createDiv({ cls: 'black-hole-stats' });

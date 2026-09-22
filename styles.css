@@ -74,3 +74,18 @@
   z-index: 2;
   pointer-events: none;
 }
+
+/* On phones/narrow panes, a long folder legend wraps into a full-screen stack of pills that buries the graph.
+   Hide it by default there; the toolbar's "Legend" button toggles it back on as a scrollable overlay. */
+@media (max-width: 700px) {
+  .black-hole-legend { display: none; }
+  .black-hole-legend.is-open {
+    display: flex;
+    max-height: 55vh;
+    overflow-y: auto;
+    background: rgba(10, 8, 20, 0.88);
+    padding: 8px;
+    border-radius: 10px;
+    right: 10px;
+  }
+}
