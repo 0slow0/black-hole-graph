@@ -4,18 +4,51 @@ Turns your Obsidian graph view into a black hole. Every top-level folder becomes
 
 Pan and zoom the scene, click a folder's orbit to focus on it, and click any star to open its note.
 
+![Gargantua mode](screenshots/gargantua.png)
+
 ## Looks
 
 The plugin ships with eight visual modes you can switch between from the toolbar, each restyling the same underlying data:
 
-- **Gargantua** — the warped, lensed ring look of the black hole from *Interstellar*.
-- **Quasar** — a bright, energetic core with jets.
-- **Interstellar** — a softer, more naturalistic version of Gargantua.
-- **Polarized** — a high-contrast, sharply banded disc.
-- **Maelstrom** — a swirling, turbulent disc with heavy motion.
-- **Galaxy** — a spiral-armed galaxy instead of a single hole.
-- **Eclipse** — a silvery, backlit ring.
-- **Binary** — two black holes orbiting each other.
+### Gargantua
+The warped, lensed ring look of the black hole from *Interstellar*.
+
+![Gargantua mode](screenshots/gargantua.png)
+
+### Quasar
+A bright, energetic core with jets.
+
+![Quasar mode](screenshots/quasar.webp)
+
+### Interstellar
+A softer, more naturalistic version of Gargantua.
+
+![Interstellar mode](screenshots/interstellar.webp)
+
+### Polarized
+A high-contrast, sharply banded disc.
+
+![Polarized mode](screenshots/polarized.webp)
+
+### Maelstrom
+A swirling, turbulent disc with heavy motion.
+
+![Maelstrom mode](screenshots/maelstrom.png)
+
+### Galaxy
+A spiral-armed galaxy instead of a single hole.
+
+![Galaxy mode](screenshots/galaxy.png)
+
+### Eclipse
+A silvery, backlit ring.
+
+![Eclipse mode](screenshots/eclipse.webp)
+
+### Binary
+Two black holes orbiting each other.
+
+![Binary mode](screenshots/binary.webp)
 
 ## Installation
 
